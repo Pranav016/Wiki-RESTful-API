@@ -20,6 +20,8 @@ const wikiSchema = {
 
 const Article = new mongoose.model("Article", wikiSchema);
 
+// Request Targeting all articles
+
 app.route("/articles")
 
 .get(function(req, res){
@@ -55,6 +57,24 @@ app.route("/articles")
         }
         else{
             res.send(err);
+        }
+    });
+});
+
+// Request Targeting specific articles-
+
+app.route("/articles/:articleTitle")
+
+.get(function(req, res){
+    const articleTitle = req.params.articleTitle;
+    Article.findOne({title: articleTitle}, function(err, foundArticle){
+        if(!err){
+            if(foundArticle){
+                res.send(foundArticle);
+            }
+            else{
+                res.send("No articles matching that title were found!");
+            }
         }
     });
 });
