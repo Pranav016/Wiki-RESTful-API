@@ -46,6 +46,17 @@ app.post("/articles", function(req,res){
     });
 });
 
+app.delete("/articles", function(req, res){
+    Article.deleteMany({}, function(err){
+        if(!err){
+            res.send("Successfully deleted all articles");
+        }
+        else{
+            res.send(err);
+        }
+    });
+});
+
 //Launching the server on port 3000-
 app.listen(3000, function(){
     console.log("Server started on port 3000");
