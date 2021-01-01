@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 //Acquiring Dependencies- 
 const bodyParser = require("body-parser");
 const express = require("express");
@@ -77,7 +79,21 @@ app.route("/articles/:articleTitle")
             }
         }
     });
-});
+})
+
+.put(function(req, res){
+  Article.updateOne(
+    {title: req.params.articleTitle},
+    {title: req.body.title || req.params.articleTitle, content: req.body.content},
+    function(err){
+        if(!err){
+            res.send("Successfully updated the article!");
+        }
+        else{
+            res.send(err);
+        }
+    });
+})
 
 //Launching the server on port 3000-
 app.listen(3000, function(){
