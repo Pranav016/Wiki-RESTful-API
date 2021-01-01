@@ -84,16 +84,31 @@ app.route("/articles/:articleTitle")
 .put(function(req, res){
   Article.updateOne(
     {title: req.params.articleTitle},
-    {title: req.body.title || req.params.articleTitle, content: req.body.content},
+    {title: req.body.title, content: req.body.content},
     function(err){
         if(!err){
-            res.send("Successfully updated the article!");
+            res.send("Successfully replaced the article!");
         }
         else{
             res.send(err);
         }
     });
 })
+
+.patch(function(req, res){
+    Article.updateOne(
+        {title: req.params.articleTitle},
+        {$set: req.body},
+        function(err){
+            if(!err){
+                res.send("Successfully updated the article!");
+            }
+            else{
+                res.send(err);
+            }
+        }
+    )
+});
 
 //Launching the server on port 3000-
 app.listen(3000, function(){
