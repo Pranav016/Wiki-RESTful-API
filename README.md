@@ -48,6 +48,13 @@ REST allows client functionality to be extended by downloading and executing cod
 ## Environment Setup-
 
 * Drop a :star: on the GitHub repository.
+<br/>
+
+* Download and install a code/ text editor.
+    -  - Recommended-
+        - [Download VS Code](https://code.visualstudio.com/download)
+        - [Download Atom](https://atom.io/)
+<br/>
 
 * Download [Node Js and npm(Node package manager)](https://nodejs.org/en/) (when you download Node, npm also gets installed by default)
 <br/>
@@ -56,11 +63,28 @@ REST allows client functionality to be extended by downloading and executing cod
 ```
 npm install
 ```
+<br/>
 
 * Mongo DB community editition was used for this project which can be downloaded from here. [Download Mongo DB](https://docs.mongodb.com/manual/administration/install-community/)
+<br/>
 
 * Robo 3T is a desktop graphical user interface (GUI) for Mongo DB. It can help to skip running all the Mongo DB commands manually every time we want to use it. [Download Robo 3T](https://robomongo.org/download) (optional)
+<br/>
 
-* Open your bash/ terminal and run command `mongod` to start the DB. Use Robo 3T to create a DB with name `wikiDB` and store the wikipedia articles.
+* Open your bash/ terminal and run command
+```
+mongod
+```
+to start the DB. Use Robo 3T to create a DB with name `wikiDB` and store the wikipedia articles.
+<br/>
 
 * Now you are all set to work with the REST API.
+<br/>
+
+#### Some useful Mongo DB commands if you are using the terminal instead of the GUI-
+```
+show dbs
+use db <db name>
+show collections
+<db name> .find()
+```
