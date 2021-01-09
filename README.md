@@ -5,6 +5,11 @@
 ## About -
 Wikipedia is a free, open content online encyclopedia for informative articles on various topics created through the collaborative effort of the community. This project aims to make a RESTful API for these wikipedia articles to be sent from the database to the browser on request.
 
+## Tech Stack-
+- Node Js
+- Mongoose (ODM)
+- Mongo DB
+
 ## What is an API-
 API stands for Application Programming Interface. An API allows applications to access data and interact with external software components, operating systems, or microservices. To simplify, an API delivers a user response to a system and sends the system's response back to a user.
 
