@@ -44,3 +44,23 @@ REST allows client functionality to be extended by downloading and executing cod
 - PATCH to partially update an existing resource/ data
 - POST to create data
 - DELETE methods to eliminate it
+
+## Environment Setup-
+
+* Drop a :star: on the GitHub repository.
+
+* Download [Node Js and npm(Node package manager)](https://nodejs.org/en/) (when you download Node, npm also gets installed by default)
+<br/>
+
+* Open your git bash or terminal and run command to install all dependencies.
+```
+npm install
+```
+
+* Mongo DB community editition was used for this project which can be downloaded from here. [Download Mongo DB](https://docs.mongodb.com/manual/administration/install-community/)
+
+* Robo 3T is a desktop graphical user interface (GUI) for Mongo DB. It can help to skip running all the Mongo DB commands manually every time we want to use it. [Download Robo 3T](https://robomongo.org/download) (optional)
+
+* Open your bash/ terminal and run command `mongod` to start the DB. Use Robo 3T to create a DB with name `wikiDB` and store the wikipedia articles.
+
+* Now you are all set to work with the REST API.
