@@ -37,3 +37,10 @@ The layered system style allows an architecture to be composed of hierarchical l
 <h3><li>Code on demand (optional) –</li></h3>
 REST allows client functionality to be extended by downloading and executing code in the form of applets or scripts. This simplifies clients by reducing the number of features required to be pre-implemented.
 
+## Following requests are required to be constructed to make a REST API-
+
+- GET to fetch data
+- PUT to replace an existing resource/ data
+- PATCH to partially update an existing resource/ data
+- POST to create data
+- DELETE methods to eliminate it
