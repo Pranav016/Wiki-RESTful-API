@@ -1,5 +1,7 @@
 # Wiki RESTful-API
 
+![Wiki-RESTful-API](https://socialify.git.ci/Pranav016/Wiki-RESTful-API/image?font=Inter&language=1&owner=1&pattern=Formal%20Invitation&stargazers=1&theme=Dark)
+
 ## About -
 Wikipedia is a free, open content online encyclopedia for informative articles on various topics created through the collaborative effort of the community. This project aims to make a RESTful API for these wikipedia articles to be sent from the database to the browser on request.
 
@@ -9,12 +11,16 @@ API stands for Application Programming Interface. An API allows applications to 
 ## About RESTful APIs-
 - REST stands for REpresentational State Transfer.
 <br/>
+
 - It is a software architectural style that defines a set of constraints to be used for creating Web services. Web services that conform to the REST architectural style, called RESTful Web services.
 <br/>
+
 - REST suggests to create an object of the data requested by the client and send the values of the object in response to the user.
 <br/>
+
 - The architectural style of REST helps in leveraging the lesser use of bandwidth to make an application more suitable for the internet.
 <br/>
+
 - Both JSON and XML formats have a proper hierarchical structure of data hence are often used to make APIs.
 
 ## Guiding Principles of REST
