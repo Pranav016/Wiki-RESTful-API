@@ -10,6 +10,11 @@ Wikipedia is a free, open content online encyclopedia for informative articles o
 - Mongoose (ODM)
 - Mongo DB
 
+## Tools used-
+- Robo 3T
+- VS Code
+- Postman
+
 ## What is an API-
 API stands for Application Programming Interface. An API allows applications to access data and interact with external software components, operating systems, or microservices. To simplify, an API delivers a user response to a system and sends the system's response back to a user.
 
@@ -62,7 +67,7 @@ REST allows client functionality to be extended by downloading and executing cod
 <br/>
 
 * Download and install a code/ text editor.
-    -  - Recommended-
+    - Recommended-
         - [Download VS Code](https://code.visualstudio.com/download)
         - [Download Atom](https://atom.io/)
 <br/>
@@ -70,23 +75,36 @@ REST allows client functionality to be extended by downloading and executing cod
 * Download [Node Js and npm(Node package manager)](https://nodejs.org/en/) (when you download Node, npm also gets installed by default)
 <br/>
 
-* Open your git bash or terminal and run command to install all dependencies.
+* Mongo DB community editition was used for this project. [Download Mongo DB community editition](https://docs.mongodb.com/manual/administration/install-community/)
+<br/>
+
+* Robo 3T is a desktop graphical user interface (GUI) for Mongo DB. It can help to skip running all the Mongo DB commands manually every time we want to access the data. [Download Robo 3T](https://robomongo.org/download) (optional)
+<br/>
+
+* Clone the repository by running command
+```
+git clone https://github.com/Pranav016/Wiki-RESTful-API.git
+```
+in your git bash.
+<br/>
+
+* Run command `cd Wiki-RESTful-API`.
+<br/>
+
+* Run this command to install all dependencies for the project.
 ```
 npm install
 ```
 <br/>
 
-* Mongo DB community editition was used for this project which can be downloaded from here. [Download Mongo DB](https://docs.mongodb.com/manual/administration/install-community/)
-<br/>
-
-* Robo 3T is a desktop graphical user interface (GUI) for Mongo DB. It can help to skip running all the Mongo DB commands manually every time we want to use it. [Download Robo 3T](https://robomongo.org/download) (optional)
-<br/>
-
-* Open your bash/ terminal and run command
+* Run this command on your terminal/ bash to start the Mongo server on port 27017(default).
 ```
 mongod
 ```
-to start the DB. Use Robo 3T to create a DB with name `wikiDB` and store the wikipedia articles.
+Use Robo 3T to create a DB with name `wikiDB` and store the wikipedia articles.
+<br/>
+
+* Use Postman to test the API and make requests. [Download Postman](https://www.postman.com/downloads/)
 <br/>
 
 * Now you are all set to work with the REST API.
